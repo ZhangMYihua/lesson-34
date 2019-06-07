@@ -1,49 +1,26 @@
 {
-  "name": "crwn-clothing",
-  "version": "0.1.0",
-  "proxy": "http://localhost:5000",
-  "private": true,
-  "dependencies": {
-    "firebase": "6.0.2",
-    "node-sass": "4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "7.0.3",
-    "react-router-dom": "5.0.0",
-    "react-stripe-checkout": "2.6.3",
-    "redux": "4.0.1",
-    "redux-logger": "3.0.6",
-    "redux-persist": "5.10.0",
-    "redux-saga": "1.0.2",
-    "redux-thunk": "2.3.0",
-    "reselect": "4.0.0",
-    "styled-components": "4.2.0"
-  },
-  "devDependencies": {
-    "react-scripts": "3.0.0"
-  },
-  "resolutions": {
-    "babel-jest": "24.7.1"
+  "name": "crwn-clothing-server",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "2.8.5",
+    "dotenv": "7.0.0",
+    "express": "^4.16.4",
+    "stripe": "6.28.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "concurrently": "^4.0.1"
   }
 }
