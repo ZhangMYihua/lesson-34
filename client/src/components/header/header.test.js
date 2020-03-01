@@ -22,7 +22,7 @@ describe('Header component', () => {
     wrapper = shallow(<Header {...mockProps} />);
   });
 
-  it('should render FormInput component', () => {
+  it('should render Header component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
