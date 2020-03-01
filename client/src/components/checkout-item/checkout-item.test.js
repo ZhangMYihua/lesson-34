@@ -38,7 +38,7 @@ describe('CheckoutItem component', () => {
     expect(mockClearItem).toHaveBeenCalled();
   });
 
-  it('should call addItem when left arrow is clicked', () => {
+  it('should call removeItem when left arrow is clicked', () => {
     wrapper
       .find('QuantityContainer')
       .childAt(0)
