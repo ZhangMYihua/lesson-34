@@ -1,32 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component should render Header component 1`] = `
-<styled.div>
-  <Styled(Link)
-    to="/"
-  >
-    <ForwardRef
-      className="logo"
-    />
-  </Styled(Link)>
-  <styled.div>
-    <OptionLink
-      to="/shop"
-    >
-      SHOP
-    </OptionLink>
-    <OptionLink
-      to="/shop"
-    >
-      CONTACT
-    </OptionLink>
-    <OptionLink
-      as="div"
-      onClick={[MockFunction]}
-    >
-      SIGN OUT
-    </OptionLink>
-    <Connect(CartIcon) />
-  </styled.div>
-</styled.div>
-`;
+exports[`Header component should render FormInput component 1`] = `ShallowWrapper {}`;
