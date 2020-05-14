@@ -1,3 +1,223 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ShopPage should render ShopPage component 1`] = `ReactWrapper {}`;
+exports[`ShopPage should render ShopPage component 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Provider
+      store={
+        Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "persistor": Object {
+            "persist": [Function],
+          },
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        }
+      }
+    >
+      <ShopPage
+        fetchCollectionsStart={
+          [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          }
+        }
+        match={
+          Object {
+            "path": "",
+          }
+        }
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "daVAfG",
+                  "rules": Array [
+                    "
+  width: 100%;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-htpNat daVAfG"
+            >
+              <Suspense
+                fallback={<Spinner />}
+              >
+                <Route
+                  component={
+                    Object {
+                      "$$typeof": Symbol(react.lazy),
+                      "_ctor": [Function],
+                      "_result": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "WrappedComponent": [Function],
+                        "compare": null,
+                        "displayName": "Connect(Component)",
+                        "type": [Function],
+                      },
+                      "_status": 1,
+                    }
+                  }
+                  exact={true}
+                  path=""
+                />
+                <Route
+                  component={
+                    Object {
+                      "$$typeof": Symbol(react.lazy),
+                      "_ctor": [Function],
+                      "_result": null,
+                      "_status": -1,
+                    }
+                  }
+                  path="/:collectionId"
+                />
+                <Spinner>
+                  <styled.div>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-bdVaJa",
+                            "isStatic": true,
+                            "lastClassName": "itPEQX",
+                            "rules": Array [
+                              "
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+",
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-bdVaJa",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="sc-bdVaJa itPEQX"
+                      >
+                        <styled.div>
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bwzfXH",
+                                  "isStatic": true,
+                                  "lastClassName": "fZfiXf",
+                                  "rules": Array [
+                                    "
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(195, 195, 195, 0.6);
+  border-radius: 50%;
+  border-top-color: #636767;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+
+  @keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+",
+                                  ],
+                                },
+                                "displayName": "styled.div",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bwzfXH",
+                                "target": "div",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                          >
+                            <div
+                              className="sc-bwzfXH fZfiXf"
+                            />
+                          </StyledComponent>
+                        </styled.div>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </Spinner>
+              </Suspense>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </ShopPage>
+    </Provider>
+  </Router>
+</BrowserRouter>
+`;
