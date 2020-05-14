@@ -1,3 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormInput component should render FormInput component 1`] = `ShallowWrapper {}`;
+exports[`FormInput component should render FormInput component 1`] = `
+<styled.div>
+  <FormInputContainer
+    onChange={[MockFunction]}
+    value="test@gmail.com"
+  />
+  <FormInputLabel
+    className="shrink"
+  >
+    email
+  </FormInputLabel>
+</styled.div>
+`;

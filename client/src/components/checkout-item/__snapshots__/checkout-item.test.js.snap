@@ -1,3 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CheckoutItem component should render CheckoutItem component 1`] = `ShallowWrapper {}`;
+exports[`CheckoutItem component should render CheckoutItem component 1`] = `
+<styled.div>
+  <styled.div>
+    <img
+      alt="item"
+      src="www.testImage.com"
+    />
+  </styled.div>
+  <styled.span>
+    hats
+  </styled.span>
+  <QuantityContainer>
+    <div
+      onClick={[Function]}
+    >
+      ❮
+    </div>
+    <span>
+      2
+    </span>
+    <div
+      onClick={[Function]}
+    >
+      ❯
+    </div>
+  </QuantityContainer>
+  <styled.span>
+    10
+  </styled.span>
+  <RemoveButtonContainer
+    onClick={[Function]}
+  >
+    ✕
+  </RemoveButtonContainer>
+</styled.div>
+`;

@@ -1,3 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CollectionPage should render the CollectionPage component 1`] = `ShallowWrapper {}`;
+exports[`CollectionPage should render the CollectionPage component 1`] = `
+<styled.div>
+  <styled.h2>
+    Test
+  </styled.h2>
+  <CollectionItemsContainer>
+    <Connect(CollectionItem)
+      item={
+        Object {
+          "id": 1,
+        }
+      }
+      key="1"
+    />
+    <Connect(CollectionItem)
+      item={
+        Object {
+          "id": 2,
+        }
+      }
+      key="2"
+    />
+    <Connect(CollectionItem)
+      item={
+        Object {
+          "id": 3,
+        }
+      }
+      key="3"
+    />
+  </CollectionItemsContainer>
+</styled.div>
+`;
