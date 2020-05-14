@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header component should render FormInput component 1`] = `ShallowWrapper {}`;
+
+exports[`Header component should render Header component 1`] = `ShallowWrapper {}`;
