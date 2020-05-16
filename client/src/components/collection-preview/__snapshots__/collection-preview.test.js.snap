@@ -1,3 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CollectionPreview component should render CollectionPreview component 1`] = `ShallowWrapper {}`;
+exports[`CollectionPreview component should render CollectionPreview component 1`] = `
+<styled.div>
+  <TitleContainer
+    onClick={[Function]}
+  >
+    HATS
+  </TitleContainer>
+  <styled.div />
+</styled.div>
+`;

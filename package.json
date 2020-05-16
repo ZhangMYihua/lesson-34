@@ -19,6 +19,7 @@
     "compression": "1.7.4",
     "cors": "2.8.5",
     "dotenv": "7.0.0",
+    "enzyme-to-json": "^3.4.4",
     "express": "^4.16.4",
     "express-sslify": "1.2.0",
     "stripe": "6.28.0"

@@ -26,6 +26,11 @@
   "devDependencies": {
     "react-scripts": "3.0.0"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "resolutions": {
     "babel-jest": "24.7.1"
   },
